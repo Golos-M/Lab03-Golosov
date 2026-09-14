@@ -34,3 +34,5 @@ Console.WriteLine($"Попытка №{++attempts}");
 Console.WriteLine($"Попытка №{++attempts}");
 Console.WriteLine($"Всего попыток: {attempts}");
 
+Console.WriteLine();
+Console.WriteLine();
