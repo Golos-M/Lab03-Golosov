@@ -158,3 +158,21 @@ int result3 = ++x + y++;
 Console.WriteLine($"Результат 1 (++x + 3): {result1}, x = {x}");
 Console.WriteLine($"Результат 2 (x++ + 3): {result2}, x = {x}");
 Console.WriteLine($"Результат 3 (++x + y++): {result3}, x = {x}, y = {y}");
+
+
+
+Console.Write("Введите сумму покупки: ");
+double purchaseAmount = double.Parse(Console.ReadLine());
+Console.Write("Есть карта постоянного клиента? (1 - да, 0 - нет): ");
+bool hasLoyaltyCard = int.Parse(Console.ReadLine()) == 1;
+Console.Write("Введите количество товаров в чеке: ");
+int itemCount = int.Parse(Console.ReadLine());
+bool condition1 = purchaseAmount >= 3000;
+bool condition2 = itemCount >= 3;
+bool condition3 = hasLoyaltyCard;
+bool eligibleForDiscount = (condition1 && condition2) || condition3;
+
+Console.WriteLine($"Сумма >= 3000: {condition1}");
+Console.WriteLine($"Товаров >= 3: {condition2}");
+Console.WriteLine($"Есть карта клиента: {condition3}");
+Console.WriteLine($"Право на скидку: {eligibleForDiscount}");
