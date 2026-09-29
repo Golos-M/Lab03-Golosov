@@ -143,3 +143,18 @@ Console.Write("Введите целое число: ");
 int number = int.Parse(Console.ReadLine());
 bool isEven = number % 2 == 0;
 Console.WriteLine(isEven);
+
+
+
+int x = 5;
+
+int result1 = ++x + 3; 
+x = 5;
+int result2 = x++ + 3; 
+x = 5;
+int y = 10;
+int result3 = ++x + y++; 
+
+Console.WriteLine($"Результат 1 (++x + 3): {result1}, x = {x}");
+Console.WriteLine($"Результат 2 (x++ + 3): {result2}, x = {x}");
+Console.WriteLine($"Результат 3 (++x + y++): {result3}, x = {x}, y = {y}");
